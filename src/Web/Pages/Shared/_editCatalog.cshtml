@@ -6,9 +6,13 @@
         <div class="esh-catalog-name">
             <span>@Model.Name</span>
         </div>
+        <div class="esh-catalog-name">
+            <span>@Model.Subtitle</span>
+        </div>
         <input class="esh-catalog-button" type="submit" value="[ Edit ]" />
         <input type="hidden" asp-for="@Model.Id" name="id" />
         <input type="hidden" asp-for="@Model.Name" name="name" />
+        <input type="hidden" asp-for="@Model.Subtitle" name="subtitle" />
         <input type="hidden" asp-for="@Model.PictureUri" name="pictureUri" />
         <input type="hidden" asp-for="@Model.Price" name="price" />
     </div>

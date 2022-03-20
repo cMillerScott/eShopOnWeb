@@ -18,6 +18,10 @@ public class CatalogItemConfiguration : IEntityTypeConfiguration<CatalogItem>
             .IsRequired(true)
             .HasMaxLength(50);
 
+        builder.Property(ci => ci.Subtitle)
+          //  .IsRequired(true)
+            .HasMaxLength(50);
+
         builder.Property(ci => ci.Price)
             .IsRequired(true)
             .HasColumnType("decimal(18,2)");

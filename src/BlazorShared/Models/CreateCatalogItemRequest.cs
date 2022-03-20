@@ -11,6 +11,9 @@ public class CreateCatalogItemRequest
     [Required(ErrorMessage = "The Name field is required")]
     public string Name { get; set; } = string.Empty;
 
+    [Required(ErrorMessage = "The Subtitle field is required")]
+    public string Subtitle { get; set; } = string.Empty;
+
     [Required(ErrorMessage = "The Description field is required")]
     public string Description { get; set; } = string.Empty;
 

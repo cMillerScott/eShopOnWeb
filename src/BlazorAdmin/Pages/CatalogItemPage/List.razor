@@ -27,7 +27,7 @@ else
                 <th>Item Type</th>
                 <th>Brand</th>
                 <th>Id</th>
-                <th>Name</th>
+                <th>Name/Subtitle</th>
                 <th>@nameof(CatalogItem.Description)</th>
                 <th>@nameof(CatalogItem.Price)</th>
                 <th>Actions</th>
@@ -43,7 +43,7 @@ else
                     <td>@item.CatalogType</td>
                     <td>@item.CatalogBrand</td>
                     <td>@item.Id</td>
-                    <td>@item.Name</td>
+                    <td>@item.Name <br/> @item.Subtitle</td>
                     <td>@item.Description</td>
                     <td>@item.Price</td>
                     <td>
