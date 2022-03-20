@@ -67,10 +67,16 @@
                     </section>
                     <section class="esh-basket-item col-xs-push-7 col-xs-4">
 
+                        <button class="btn esh-basket-checkout" name="deleteallbutton" value="" type="submit"
+                                asp-page-handler="Update">
+                            [ Delete All ]
+                        </button>
+
                         <button class="btn esh-basket-checkout" name="updatebutton" value="" type="submit"
                                 asp-page-handler="Update">
                             [ Update ]
                         </button>
+
                         <a asp-page="./Checkout" class="btn esh-basket-checkout">[ Checkout ]</a>
                     </section>
                 </div>
